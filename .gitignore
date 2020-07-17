@@ -1,0 +1,13 @@
+# Project exclude paths
+/qy-109-project-common/target/
+/qy-109-project-config/target/
+/qy-109-project-consumer-management/qy-109-project-consumer-backup/target/
+/qy-109-project-consumer-management/qy-109-project-consumer-backup2/target/
+/qy-109-project-eureka-management/qy-109-project-eureka-6081/target/
+/qy-109-project-eureka-management/qy-109-project-eureka-6082/target/
+/qy-109-project-eureka-management/qy-109-project-eureka-6083/target/
+/qy-109-project-management/qy-109-project-api/target/
+/qy-109-project-management/qy-109-project-mapper/target/
+/qy-109-project-management/qy-109-project-model/target/
+/qy-109-project-management/qy-109-project-service1/target/
+/qy-109-project-provider-management/qy-109-project-provider-backup/target/
