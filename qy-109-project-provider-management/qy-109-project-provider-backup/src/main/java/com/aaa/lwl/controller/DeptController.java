@@ -17,6 +17,7 @@ import java.util.List;
  * Description
  */
 @RestController
+
 public class DeptController extends CommonController<Dept> {
 
 

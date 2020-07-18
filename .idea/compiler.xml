@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="qy-109-project-consumer-backup" />
+        <module name="qy-109-project-eureka-6083" />
+        <module name="qy-109-project-mapper" />
+        <module name="qy-109-project-eureka-6082" />
+        <module name="qy-109-project-common" />
+        <module name="qy-109-project-consumer-backup2" />
+        <module name="qy-109-project-eureka-6081" />
+        <module name="qy-109-project-api" />
+        <module name="qy-109-project-zuul" />
+        <module name="qy-109-project-config" />
+        <module name="qy-109-project-model" />
+        <module name="qy-109-project-provider-backup" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="qy-109-project" target="1.5" />
+      <module name="qy-109-project-api" target="1.5" />
+      <module name="qy-109-project-common" target="1.5" />
+      <module name="qy-109-project-config" target="1.5" />
+      <module name="qy-109-project-consumer-backup" target="1.5" />
+      <module name="qy-109-project-consumer-backup2" target="1.5" />
+      <module name="qy-109-project-consumer-management" target="1.5" />
+      <module name="qy-109-project-eureka-6081" target="1.5" />
+      <module name="qy-109-project-eureka-6082" target="1.5" />
+      <module name="qy-109-project-eureka-6083" target="1.5" />
+      <module name="qy-109-project-eureka-management" target="1.5" />
+      <module name="qy-109-project-management" target="1.5" />
+      <module name="qy-109-project-mapper" target="1.5" />
+      <module name="qy-109-project-model" target="1.5" />
+      <module name="qy-109-project-provider-backup" target="1.5" />
+      <module name="qy-109-project-provider-management" target="1.5" />
+      <module name="qy-109-project-service1" target="7" />
+      <module name="qy-109-project-zuul" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -5,6 +5,7 @@ package com.aaa.lwl.status;
  * date 2020-07-16
  */
 public enum  SelectStatus {
+    //sd
     SELECT_DATA_SUCCESS("24001", "查询数据成功"),
     SELECT_DATA_FAILED("14001", "查询数据失败"),
     SELECT_DATA_NOT_EXIST("14002","数据不存在！"),

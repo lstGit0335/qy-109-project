@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project.iml" filepath="$PROJECT_DIR$/qy-109-project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-management/qy-109-project-api/qy-109-project-api.iml" filepath="$PROJECT_DIR$/qy-109-project-management/qy-109-project-api/qy-109-project-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-common/qy-109-project-common.iml" filepath="$PROJECT_DIR$/qy-109-project-common/qy-109-project-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-config/qy-109-project-config.iml" filepath="$PROJECT_DIR$/qy-109-project-config/qy-109-project-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-backup/qy-109-project-consumer-backup.iml" filepath="$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-backup/qy-109-project-consumer-backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-backup2/qy-109-project-consumer-backup2.iml" filepath="$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-backup2/qy-109-project-consumer-backup2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-management.iml" filepath="$PROJECT_DIR$/qy-109-project-consumer-management/qy-109-project-consumer-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6081/qy-109-project-eureka-6081.iml" filepath="$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6081/qy-109-project-eureka-6081.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6082/qy-109-project-eureka-6082.iml" filepath="$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6082/qy-109-project-eureka-6082.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6083/qy-109-project-eureka-6083.iml" filepath="$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-6083/qy-109-project-eureka-6083.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-management.iml" filepath="$PROJECT_DIR$/qy-109-project-eureka-management/qy-109-project-eureka-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-management/qy-109-project-management.iml" filepath="$PROJECT_DIR$/qy-109-project-management/qy-109-project-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-management/qy-109-project-mapper/qy-109-project-mapper.iml" filepath="$PROJECT_DIR$/qy-109-project-management/qy-109-project-mapper/qy-109-project-mapper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-management/qy-109-project-model/qy-109-project-model.iml" filepath="$PROJECT_DIR$/qy-109-project-management/qy-109-project-model/qy-109-project-model.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-provider-management/qy-109-project-provider-backup/qy-109-project-provider-backup.iml" filepath="$PROJECT_DIR$/qy-109-project-provider-management/qy-109-project-provider-backup/qy-109-project-provider-backup.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-provider-management/qy-109-project-provider-management.iml" filepath="$PROJECT_DIR$/qy-109-project-provider-management/qy-109-project-provider-management.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-management/qy-109-project-service1/qy-109-project-service1.iml" filepath="$PROJECT_DIR$/qy-109-project-management/qy-109-project-service1/qy-109-project-service1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/qy-109-project-zuul/qy-109-project-zuul.iml" filepath="$PROJECT_DIR$/qy-109-project-zuul/qy-109-project-zuul.iml" />
+    </modules>
+  </component>
+</project>
