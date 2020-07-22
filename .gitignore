@@ -11,3 +11,12 @@
 /qy-109-project-management/qy-109-project-model/target/
 /qy-109-project-management/qy-109-project-service1/target/
 /qy-109-project-provider-management/qy-109-project-provider-backup/target/
+.gitignore
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+out
+gen
