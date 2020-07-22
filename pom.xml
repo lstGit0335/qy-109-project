@@ -259,6 +259,12 @@
                 <artifactId>feign-form-spring</artifactId>
                 <version>3.8.0</version>
             </dependency>
+
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi</artifactId>
+                <version>4.1.2</version>
+            </dependency>
         </dependencies>
 
 

@@ -48,9 +48,9 @@ public class RoleController extends BaseController{
     public ResultData deleteRole(@RequestParam("roleId") Long roleId){
         Boolean bool = roleService.deleteRole(roleId);
         if (bool == true){
-            return deleteSuccess();
+            return DELETE_SUCCESS();
         } else {
-            return deleteFailed();
+            return DELETE_FAILED();
         }
     }
 

@@ -8,6 +8,8 @@ import java.util.List;
 
 public interface DeptMapper extends Mapper<Dept> {
 
+    List<Dept> selectByName(String deptName);
+
 
 
 }

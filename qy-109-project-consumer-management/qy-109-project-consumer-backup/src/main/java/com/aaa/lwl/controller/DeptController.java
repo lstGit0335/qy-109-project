@@ -1,16 +1,13 @@
 package com.aaa.lwl.controller;
 
+import com.aaa.lwl.api.IProjectService;
 import com.aaa.lwl.base.BaseController;
 import com.aaa.lwl.base.ResultData;
 import com.aaa.lwl.model.Dept;
-import com.aaa.lwl.service.IDeptService;
+import io.swagger.models.auth.In;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 /**
  * fileName:DeptController
@@ -22,25 +19,26 @@ import java.util.List;
 @RestController
 public class DeptController extends BaseController {
     @Autowired
-    private IDeptService deptService;
+    private IProjectService deptService;
 
     @PostMapping("/allDept")
-    public ResultData selectList(@RequestBody Dept dept) {
+    public ResultData selectList(Dept dept) {
         return deptService.selectList(dept);
+
     }
 
     @PostMapping("/deleteDept")
-    Integer delete(@RequestBody Dept dept) {
+    Integer delete( Dept dept) {
         return deptService.delete(dept);
     }
 
     @PostMapping("/updateDept")
-    Integer update(@RequestBody Dept dept) {
+    Integer update( Dept dept) {
         return deptService.update(dept);
     }
 
     @PostMapping("/insertDept")
-    Integer insert(@RequestBody Dept dept) {
+    Integer insert( Dept dept) {
 
         return deptService.insert(dept);
     }

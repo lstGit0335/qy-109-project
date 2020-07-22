@@ -1,8 +1,9 @@
 package com.aaa.lwl.annotation;
 
+
+import com.aaa.lwl.api.IProjectService;
 import com.aaa.lwl.model.LoginLog;
 import com.aaa.lwl.model.User;
-import com.aaa.lwl.service.IProjectService;
 import com.aaa.lwl.utils.AddressUtils;
 import com.aaa.lwl.utils.IPUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -36,8 +37,8 @@ import static com.aaa.lwl.staticproperties.TimeForatProperties.TIME_FORMAT;
 @Slf4j
 public class LogAspect {
 
-    @Autowired
-    private IProjectService projectService;
+   @Autowired
+   private  IProjectService projectService;
 
     /**
      * @author Seven Lee

@@ -2,13 +2,16 @@ package com.aaa.lwl.controller;
 
 import com.aaa.lwl.base.BaseService;
 import com.aaa.lwl.base.CommonController;
+import com.aaa.lwl.base.ResultData;
 import com.aaa.lwl.model.Menu;
 import com.aaa.lwl.service.MenuService;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.List;
 
 /**
  * fileName:MenuController
@@ -29,13 +32,19 @@ public class MenuController extends CommonController<Menu> {
     }
 
     /**
-     * 查询所有菜单
+     * 查询所有菜单分页查询
      * @param menu
      * @return
      */
-    @GetMapping("/allMenu")
-    public List<Menu> selectList( Menu menu){
-        return menuService.selectList(menu);
+    @PostMapping("/allMenu")
+    public ResultData selectList(Menu menu, @RequestParam("pageNumber") Integer pageNumber,
+                                 @RequestParam("pageSzie") Integer pageSize){
+        PageInfo<Menu> menuPageInfo = menuService.selectListByPage(menu, pageNumber, pageSize);
+        if (menuPageInfo != null && !"".equals(menuPageInfo)){
+            return operationSuccess(menuPageInfo);
+        }else {
+            return operationFailed();
+        }
     }
 
     /**
@@ -44,8 +53,13 @@ public class MenuController extends CommonController<Menu> {
      * @return
      */
     @GetMapping("/deleteMenu")
-    public Integer delete(Menu menu){
-        return menuService.delete(menu);
+    public ResultData delete(Menu menu){
+        Integer delete = menuService.delete(menu);
+        if (delete > 0){
+            return  DELETE_SUCCESS();
+        }else {
+            return DELETE_FAILED();
+        }
     }
 
     /**
@@ -54,8 +68,13 @@ public class MenuController extends CommonController<Menu> {
      * @return
      */
     @GetMapping("/insertMenu")
-    public Integer add(Menu menu){
-        return menuService.add(menu);
+    public ResultData add(Menu menu){
+        Integer add = menuService.add(menu);
+        if (add > 0){
+            return INSERT_SUCCESS();
+        }else {
+            return INSERT_FAILED();
+        }
     }
 
     /**
@@ -64,8 +83,13 @@ public class MenuController extends CommonController<Menu> {
      * @return
      */
     @GetMapping("/updateMenu")
-    public Integer update(Menu menu){
-        return menuService.update(menu);
+    public ResultData update(Menu menu){
+        Integer update = menuService.update(menu);
+        if (update > 0){
+            return UPDATE_SUCCESS();
+        }else {
+            return UPDATE_FAILED();
+        }
     }
 
 }

@@ -7,5 +7,8 @@ import java.util.HashMap;
 import java.util.List;
 
 public interface UserMapper extends Mapper<User> {
-    List<HashMap> selectUserAll(HashMap map);
+
+    List<User> selectUserAll(String username,Integer deptId);
+
+//    List<User> selectByFiled( String username);
 }

@@ -3,7 +3,6 @@ package com.aaa.lwl.controller;
 import com.aaa.lwl.base.BaseController;
 import com.aaa.lwl.base.ResultData;
 import com.aaa.lwl.model.Dept;
-import com.aaa.lwl.service.IDeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

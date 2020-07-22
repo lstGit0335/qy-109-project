@@ -1,8 +1,8 @@
 package com.aaa.lwl.controller;
 
+import com.aaa.lwl.api.IProjectService;
 import com.aaa.lwl.base.BaseController;
 import com.aaa.lwl.model.Dict;
-import com.aaa.lwl.service.IDictService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,7 +19,7 @@ import java.util.List;
 @RestController
 public class DictController extends BaseController {
     @Autowired
-    IDictService dictService;
+    private IProjectService dictService;
 
     @GetMapping("/allDict")
     public List<Dict> selectList(Dict dict){

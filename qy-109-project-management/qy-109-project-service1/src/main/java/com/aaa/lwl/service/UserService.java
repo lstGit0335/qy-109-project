@@ -5,6 +5,7 @@ import com.aaa.lwl.base.BaseService;
 import com.aaa.lwl.base.ResultData;
 import com.aaa.lwl.mapper.UserMapper;
 import com.aaa.lwl.model.User;
+import com.aaa.lwl.status.OperationStatus;
 import com.github.pagehelper.PageInfo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,21 +34,19 @@ public class UserService  extends BaseService<User> {
     private UserMapper userMapper;
     /**
      * 查询用户全部信息
+     * @return
      */
-    public Map<String ,Object> selectAllUser(){
-        Map<String,Object> resultMap = new HashMap<String, Object>();
+    public ResultData selectAllUser(@RequestParam("username") String username, @RequestParam("deptId")Integer deptId){
 
-        List<User> allUserResult = userMapper.selectAll();
-        if (allUserResult != null){
-            resultMap.put("code",SELECT_DATA_SUCCESS.getCode());
-            resultMap.put("msg",SELECT_DATA_SUCCESS.getMsg());
-            resultMap.put("data",allUserResult);
 
+        ResultData resultData = new ResultData();
+        List<User> userList = userMapper.selectUserAll(username, deptId);
+        if (userList != null){
+           return resultData.setCode(SELECT_DATA_SUCCESS.getCode()).setMsg(SELECT_DATA_SUCCESS.getMsg());
         } else {
-            resultMap.put("code",SELECT_DATA_FAILED.getCode());
-            resultMap.put("msg",SELECT_DATA_FAILED.getMsg());
+            return resultData.setCode(SELECT_DATA_FAILED.getCode()).setMsg(SELECT_DATA_FAILED.getMsg());
         }
-        return resultMap;
+
     }
     /**
      * 修改员工信息
@@ -106,6 +105,13 @@ public class UserService  extends BaseService<User> {
         }
         return resultMap;
     }
+
+
+
+//    public List<User> selectByFiled(@RequestParam("username") String username){
+//        return userMapper.selectByFiled(username);
+//
+//    }
     /**
      * 分页查询全部用户
      */

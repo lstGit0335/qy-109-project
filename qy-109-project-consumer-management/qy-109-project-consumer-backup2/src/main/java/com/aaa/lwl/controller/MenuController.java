@@ -2,7 +2,6 @@ package com.aaa.lwl.controller;
 
 import com.aaa.lwl.base.BaseController;
 import com.aaa.lwl.model.Menu;
-import com.aaa.lwl.service.IMenuService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;

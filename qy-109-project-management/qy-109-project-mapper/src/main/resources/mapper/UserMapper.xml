@@ -21,7 +21,7 @@
     <result column="type" property="type" jdbcType="CHAR" />
     <result column="token" property="token" jdbcType="VARCHAR" />
   </resultMap>
-  <select id="selectUserAll" resultType="HashMap" parameterType="HashMap">
+  <select id="selectUserAll" resultMap="BaseResultMap" parameterType="java.lang.Long">
     select u.username,u.ssex,u.email,d.DEPT_NAME,u.mobile,u.`status`,u.create_time from t_user u LEFT JOIN t_dept d on u.dept_id = d.DEPT_ID
     <where>
       1 = 1
@@ -33,5 +33,13 @@
       </if>
     </where>
   </select>
+
+<!--  <select id="selectByFiled" resultMap="BaseResultMap" parameterType="java.lang.Long" >-->
+<!--    select id, username, dept_id, email, mobile, status,create_time,modify_time,last_login_time,ssex,description,avatar,type-->
+<!--    from t_user-->
+<!--    where username like '%${username}%'-->
+
+<!--    <if test=""></if>-->
+<!--  </select>-->
 
 </mapper>

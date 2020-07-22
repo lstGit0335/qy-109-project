@@ -29,6 +29,11 @@ public class MappingProjectController extends CommonController<MappingUnit> {
     @Autowired
     private RedisService redisService;
 
+    /**
+     * 查询项目id和项目名称
+     * @param mappingProject
+     * @return
+     */
     @PostMapping("/projectSelect")
     public ResultData projectSelect( MappingProject mappingProject){
         Map<String, Object> resultMap = mappingProjectService.projectSelect(mappingProject);
@@ -38,6 +43,12 @@ public class MappingProjectController extends CommonController<MappingUnit> {
             return super.selectFailed();
         }
     }
+
+    /**
+     * 通过名字查询
+     * @param name
+     * @return
+     */
     @PostMapping("/SelectGroupName")
     public ResultData SelectGroupName(@RequestParam ("name") String name){
         System.out.println(name);
@@ -48,6 +59,12 @@ public class MappingProjectController extends CommonController<MappingUnit> {
             return super.selectFailed();
         }
     }
+
+    /**
+     * 通过
+     * @param id
+     * @return
+     */
     @PostMapping("/projectDetail")
     public ResultData projectDetail(@RequestParam("id") String id){
         Map<String, Object> resultMap = mappingProjectService.projectDetail(id);

@@ -187,7 +187,7 @@ public class BaseController {
      * 删除成功，返回系统消息
      * @return
      */
-    protected ResultData deleteSuccess(){
+    protected ResultData DELETE_SUCCESS(){
         ResultData resultData = new ResultData();
         resultData.setCode(DELETE_SUCCESS.getCode());
         resultData.setMsg(DELETE_SUCCESS.getMsg());
@@ -196,7 +196,7 @@ public class BaseController {
     /**
      * 删除失败
      */
-    protected ResultData deleteFailed(){
+    protected ResultData DELETE_FAILED(){
         ResultData resultData = new ResultData();
         resultData.setCode(DELETE_FAILED.getCode());
         resultData.setMsg(DELETE_FAILED.getMsg());

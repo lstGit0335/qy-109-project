@@ -12,4 +12,11 @@
     <result column="CREATE_TIME" property="createTime" jdbcType="TIMESTAMP" />
     <result column="MODIFY_TIME" property="modifyTime" jdbcType="TIMESTAMP" />
   </resultMap>
+
+  <select id="selectByName" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select DEPT_ID, PARENT_ID, DEPT_NAME, ORDER_NUM, CREATE_TIME, MODIFY_TIME
+    from t_dept
+    where DEPT_NAME like  '%${deptName}%'
+
+  </select>
 </mapper>

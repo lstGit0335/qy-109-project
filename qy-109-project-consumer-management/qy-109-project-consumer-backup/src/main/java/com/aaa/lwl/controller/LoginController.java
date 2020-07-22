@@ -1,10 +1,10 @@
 package com.aaa.lwl.controller;
 
 import com.aaa.lwl.annotation.LoginAnnotation;
+import com.aaa.lwl.api.IProjectService;
 import com.aaa.lwl.base.BaseController;
 import com.aaa.lwl.base.ResultData;
 import com.aaa.lwl.model.User;
-import com.aaa.lwl.service.IProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
